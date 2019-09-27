@@ -1,0 +1,20 @@
+{
+  "name": "liriBot",
+  "version": "1.0.0",
+  "description": "A LIRI bot that searches Spotify, OMDB, and Bands In Town",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tardyparty/liriBot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tardyparty/liriBot/issues"
+  },
+  "homepage": "https://github.com/tardyparty/liriBot#readme"
+}

@@ -31,11 +31,11 @@ Using the terminal, users can input one of four commands:
 
 
 ## Coding Structure
-    *Each command is presented as a case and has an accompanying function for each case.
-    *Each of the funcitons handles everything from the API call to the output of data to console and log.txt
+    * Each command is presented as a case and has an accompanying function for each case.
+    * Each of the funcitons handles everything from the API call to the output of data to console and log.txt
 
 ## Run()
-###Requirements 
+### Requirements 
 * NPM's 
     * dotenv
     * axios
@@ -47,10 +47,10 @@ Using the terminal, users can input one of four commands:
     * bandsintown
     * omdb
 
-##Tools Used 
+## Tools Used 
     * Node.js
     * Axios
     * FS
 
-##My Role
+## My Role
 Developed this application from beginning to end. 

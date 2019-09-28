@@ -17,7 +17,7 @@ Using the terminal, users can input one of four commands:
         * Spotify Link
         * Album
 * "movie-this"
-    *S ends API call to OMDB and returns: 
+    * Sends API call to OMDB and returns: 
         * Title
         * Year
         * IMDB Rating

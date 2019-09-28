@@ -1,0 +1,35 @@
+
+******* weezer *******
+
+Venue: Rock in Rio
+Location: Rio De Janeiro, Brazil
+Date: 2019-09-28T19:00:43
+
+******* do you wanna get high *******
+
+Artist: Weezer
+Song: Do You Wanna Get High?
+View on Spotify: https://api.spotify.com/v1/tracks/5IJ6rniX2mkT2ITklBSx6a
+Album: Weezer (White Album)
+
+******* Mean Girls *******
+
+Title: Mean Girls
+Year: 2004
+IMDB Rating: 7.0
+Rotten Tomatoes: 84%
+Country: USA, Canada
+Language: English, German, Vietnamese, Swahili
+Plot: Cady Heron is a hit with The Plastics, the A-list girl clique at her new school, until she makes the mistake of falling for Aaron Samuels, the ex-boyfriend of alpha Plastic Regina George.
+Actors: Lindsay Lohan, Rachel McAdams, Tina Fey, Tim Meadows
+
+******* Men in Black *******
+
+Title: Men in Black
+Year: 1997
+IMDB Rating: 7.3
+Rotten Tomatoes: 92%
+Country: USA
+Language: English, Spanish
+Plot: A police officer joins a secret organization that polices and monitors extraterrestrial interactions on Earth.
+Actors: Tommy Lee Jones, Will Smith, Linda Fiorentino, Vincent D'Onofrio

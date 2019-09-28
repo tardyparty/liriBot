@@ -47,29 +47,16 @@ function concert() {
         .get(url)
         .then(function(response) {
 
+            var result = "\n" + "******* " + input + " *******" + "\n" + "\n" +
+                "Venue: " + response.data[0].venue.name + "\n" + 
+                "Location: " + response.data[0].venue.city + ", " + response.data[0].venue.country + "\n" + 
+                "Date: " + response.data[0].datetime + "\n";
+
             // display Name, Venue, Location, Date
-            console.log("******* " + input + " *******");
-            console.log("Venue: " + response.data[0].venue.name);
-            console.log("Location: " + response.data[0].venue.city + ", " + response.data[0].venue.country);
-            console.log("Date: " + response.data[0].datetime);
+            console.log(console.log(result));
 
             // write info to log.txt
-            fs.appendFile("log.txt", "******* " + input + " *******", function(err) {
-                if (err) {
-                    console.log(err);
-                }
-            });
-            fs.appendFile("log.txt", "Venue: " + response.data[0].venue.name, function(err) {
-                if (err) {
-                    console.log(err);
-                }
-            });
-            fs.appendFile("log.txt", "Location: " + response.data[0].venue.city + ", " + response.data[0].venue.country, function(err) {
-                if (err) {
-                    console.log(err);
-                }
-            });
-            fs.appendFile("log.txt", "Date: " + response.data[0].datetime, function(err) {
+            fs.appendFile("log.txt", result, function(err) {
                 if (err) {
                     console.log(err);
                 }
@@ -105,35 +92,17 @@ function song() {
             return console.log("Error occurred: " + err);
         }
 
+        var result = "\n" + "******* " + input + " *******" + "\n" + "\n" +
+        "Artist: " + data.tracks.items[0].artists[0].name + "\n" + 
+        "Song: " + data.tracks.items[0].name + "\n" + 
+        "View on Spotify: " + data.tracks.items[0].href + "\n" + 
+        "Album: " + data.tracks.items[0].album.name + "\n";
+
         // display song artist, name, link, album
-        console.log("******* " + input + " *******");
-        console.log("Artist: " + data.tracks.items[0].artists[0].name);
-        console.log("Song: " + data.tracks.items[0].name);
-        console.log("View on Spotify: " + data.tracks.items[0].href);
-        console.log("Album: " + data.tracks.items[0].album.name);
+        console.log(result);
 
         // log info to log.txt 
-        fs.appendFile("log.txt", "******* " + input + " *******", function(err) {
-            if (err) {
-                console.log(err);
-            }
-        });
-        fs.appendFile("log.txt", "Artist: " + data.tracks.items[0].artists[0].name, function(err) {
-            if (err) {
-                console.log(err);
-            }
-        });
-        fs.appendFile("log.txt", "Song: " + data.tracks.items[0].name, function(err) {
-            if (err) {
-                console.log(err);
-            }
-        });
-        fs.appendFile("log.txt", "View on Spotify: " + data.tracks.items[0].href, function(err) {
-            if (err) {
-                console.log(err);
-            }
-        });
-        fs.appendFile("log.txt", "Album: " + data.tracks.items[0].album.name, function(err) {
+        fs.appendFile("log.txt", result, function(err) {
             if (err) {
                 console.log(err);
             }
@@ -157,59 +126,21 @@ function movie() {
         .get(url)
         .then(function(response) {
 
+            var result = "\n" + "******* " + response.data.Title + " *******" + "\n" + "\n" +
+            "Title: " + response.data.Title + "\n" +
+            "Year: " + response.data.Year + "\n" +
+            "IMDB Rating: " + response.data.imdbRating + "\n" + 
+            "Rotten Tomatoes: " + response.data.Ratings[1].Value + "\n" + 
+            "Country: " + response.data.Country + "\n" + 
+            "Language: " + response.data.Language + "\n" + 
+            "Plot: " + response.data.Plot + "\n" +
+            "Actors: " + response.data.Actors + "\n";
+
             // display movie info
-            console.log("******* " + response.data.Title + " *******");
-            console.log("Title: " + response.data.Title);
-            console.log("Year: " + response.data.Year);
-            console.log("IMDB Rating: " + response.data.imdbRating);
-            console.log("Rotten Tomatoes: " + response.data.Ratings[1].Value);
-            console.log("Country: " + response.data.Country);
-            console.log("Language: " + response.data.Language);
-            console.log("Plot: " + response.data.Plot);
-            console.log("Actors: " + response.data.Actors);
+            console.log(result);
 
             // log info to log.txt
-            fs.appendFile("log.txt", "******* " + response.data.Title + " *******", function(err) {
-                if(err) {
-                    console.log(err);
-                }
-            });
-            fs.appendFile("log.txt", "Title: " + response.data.Title, function(err) {
-                if(err) {
-                    console.log(err);
-                }
-            });
-            fs.appendFile("log.txt", "Year: " + response.data.Year, function(err) {
-                if(err) {
-                    console.log(err);
-                }
-            });
-            fs.appendFile("log.txt", "IMDB Rating: " + response.data.imdbRating, function(err) {
-                if(err) {
-                    console.log(err);
-                }
-            });
-            fs.appendFile("log.txt", "Rotten Tomatoes: " + response.data.Ratings[1].Value, function(err) {
-                if(err) {
-                    console.log(err);
-                }
-            });
-            fs.appendFile("log.txt", "Country: " + response.data.Country, function(err) {
-                if(err) {
-                    console.log(err);
-                }
-            });
-            fs.appendFile("log.txt", "Language: " + response.data.Language, function(err) {
-                if(err) {
-                    console.log(err);
-                }
-            });
-            fs.appendFile("log.txt", "Plot: " + response.data.Plot, function(err) {
-                if(err) {
-                    console.log(err);
-                }
-            });
-            fs.appendFile("log.txt", "Actors: " + response.data.Actors, function(err) {
+            fs.appendFile("log.txt", result, function(err) {
                 if(err) {
                     console.log(err);
                 }

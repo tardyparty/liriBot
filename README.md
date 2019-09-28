@@ -54,3 +54,7 @@ Using the terminal, users can input one of four commands:
 
 ## My Role
 Developed this application from beginning to end. 
+
+## Demo
+
+## Screenshots

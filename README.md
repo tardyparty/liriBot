@@ -29,6 +29,12 @@ Using the terminal, users can input one of four commands:
 * "do-what-it-says" 
     * Reads command and input form random.txt and performs functions accordingly. Can only take one set of commands at a time / or the first commands in the file. 
 
+Every output is show in console as well as logged in log.txt
+
+## Example
+
+![](terminal.gif)
+
 
 ## Coding Structure
     * Each command is presented as a case and has an accompanying function for each case.
